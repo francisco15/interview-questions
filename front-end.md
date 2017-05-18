@@ -88,15 +88,41 @@ Con Flexbox podemoss controlar la orientación de un elemento, la distribución 
 ## Bootstrap
 
 #### ¿Qué es Bootstrap y qué nos ofrece?
+Bootstrap es un framework de HTML, CSS, y JS, para crear páginas Web que tengan un diseño consistente y adaptable a la pantalla. 
 
 #### ¿De qué formas podemos incluir Bootstrap en nuestro proyecto?
+Agregando el código CDN (content delivery network) a nuestro HTML para usarlo de manera remota 
+Descargando bootstrap de su página web y agregando las carpetas al proyecto
 
 #### ¿Cuáles son los breakpoints que define Bootstrap en su grilla?
+xs - móviles, sm - tablets, md - desktop, lg - pantallas más grandes
+```
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+```
 
 #### ¿Qué formas existen de personalizar los estilos de Bootstrap?
+No modificar ningún archivo de Bootstrap, así cuando se actualice el framework a una nueva versión no tendremos que modificar ningún archivo, simplemente enlazar el archivo que nosotros mismos creamos.
+
+Crear nuestra hoja de estilo personalizada, la podemos escribir en LESS o CSS.
+
+Si se quiere modificar algo que ya existe en Bootstrap, la mejor opción es copiarlo y añadir la modificación en nuestra hoja de estilo personalizada.
+
+Eliminando los componentes innecesarios, utilizar el personalizador de Bootstrap, que permite crear una versión personalizada de Bootstrap que incluye solamente los componentes que se necesita.
 
 #### ¿Cuál sería el resultado de aplicar las clases `col-xs-6 col-sm-4 col-lg-12` a un `div`?
-
+Resolución XS: toma 6 columnas
+Resolución SM: toma 4 columnas
+Resolución LG: toma 12 columnas
 
 ## Git y Github
 
