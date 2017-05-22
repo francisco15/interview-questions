@@ -127,17 +127,40 @@ Resolución LG: toma 12 columnas
 ## Git y Github
 
 #### ¿Qué son las ramas en Git y para que se pueden utilizar?
+La rama master es la rama "por defecto" cuando creas un repositorio.
+
+Una rama es una extensión de la rama master.
+
+Como buena práctica dentro de las ramas es donde deberíamos introducir los cambios a nuestro proyecto y solo luego de comprobar que dichos cambios funcionan y tienen el comportamiento deseado los unimos con la rama master.
 
 #### ¿Cuál es la diferencia entre `git merge` y `git rebase`?
+`git merge` solves the same problem as `git rebase`. 
+
+Both of these commands are designed to integrate changes from one branch into another branch — they just do it in very different ways.
+
+![alt](https://wac-cdn-a.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=em)
+![alt](https://wac-cdn-a.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=em)
+
+El rebase unifica las ramas perdiendo el historial de los commit y el merge no. Esto puede resultar bien importante cuando se necesite llevar o saber el historial de commit y se esta trabajando con otros compañeros en esa rama.
 
 #### ¿Qué es un Pull Request en Github? ¿Para qué se utiliza?
 
-#### ¿Cuál es la diferencia entre `git pull` y `git fetch`?
+Un pull request es una petición que el propietario de un fork de un repositorio hace al propietario del repositorio original para que este último incorpore los commits que están en el fork.
 
-#### En el comando `git push -u origin mi-rama` ¿para qué significa la opción -u?
+#### ¿Cuál es la diferencia entre `git pull` y `git fetch`?
+El comando `git fetch [remote-name]` sólo recupera la información y la pone en tu repositorio local —no la une automáticamente con tu trabajo ni modifica aquello en lo que estás trabajando.
+
+Al ejecutar `git pull`, por lo general se recupera la información del servidor del que clonaste, y automáticamente se intenta unir con el código con el que estás trabajando actualmente.
+
+git fetch = descarga nuevo contenido
+git pull = git fetch + merge
+
+#### En el comando `git push -u origin mi-rama` ¿qué significa la opción -u?
 
 #### En Github ¿qué significan un fork y para qué se utiliza?
+Hacerle fork a un repositorio significa copiarlo.
 
+Por lo general, las copias se utilizan para proponer cambios en el proyecto de otra persona u organización ó para utilizar el proyecto de otra persona como punto de partida para nuevas ideas.
 
 ## JavaScript
 
